@@ -1,12 +1,11 @@
 /*
 Arduino Water flow meter
 YF- S201 Hall Effect Water Flow Sensor
-Water Flow Sensor output processed to read in litres/hour
+Water Flow Sensor output processed to read in litres/min
 */
 #define FIRST_SEGMENT_PIN   3
 #define SEGMENT_COUNT       8
 volatile int flow_frequency; // Measures flow sensor pulses
-//unsigned int l_hour; // Calculated litres/hour
 unsigned int l_min; // Calculated litres/min
 unsigned char flowsensor = 2; // Sensor Input
 unsigned long currentTime;
